@@ -1,14 +1,14 @@
 class BlogsController < ApplicationController
-  before_action :set_blog_item, only: [:edit, :show, :update, :destroy]
+  before_action :set_blog, only: [:edit, :show, :update, :destroy]
   layout "blogs"
 
   def index
     @blogs = Blog.by_position.all
+    @page_title = "KJ | Blogs"
   end
 
   def new
     @blog = Blog.new
-    @page_title = "KJ | Blogs"
   end
 
   def create
@@ -56,7 +56,7 @@ class BlogsController < ApplicationController
                                   )
   end
 
-  def set_blog_item
+  def set_blog
     @blog = Blog.find(params[:id])
   end
 
