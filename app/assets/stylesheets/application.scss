@@ -19,37 +19,81 @@
 
 
 h1 {
-	font-size: 50px;
-	font-weight: bold;
+	@include centering {
+		width: 800px;
+		background-color: pink;
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+	}
+}
+
+#theNav {
+	background-color: rgba(128, 128, 128, 0.65);
+}
+
+#theNav a {
 	color: white;
+	&:hover {
+		color: LightGreen;
+	}
 }
 
 #homepgHeader {
-	width: 100%;
-	padding-top: 15%;
-	padding-bottom: 15%;
-	margin-top: 56px;
-	background: image-url('headerbackground.GIF');
-  background-position: center;
-	text-align: center;
+	@include centering {
+		width: 100%;
+		padding-top: 15%;
+		padding-bottom: 15%;
+		background: image-url('headerbackground.GIF');
+	  background-position: center;
+	}
 }
 
 #languageBox {
 	@include centering
 }
 
-.box {
+.boxes {
 	float: left;
 	width: 350px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin: 10px 5px 5px 0px;
+	margin: 10px 5px 0px 5px;
 	background-color: pink;
 	text-align: center;
 }
 
-#aboutBox {
+#missionStatement {
 	width: 100%;
 	background-color: LightGrey;
-	padding: 20px 80px 20px 80px;
+	padding: 20px 100px 20px 100px;
+	margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
