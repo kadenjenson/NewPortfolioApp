@@ -1,16 +1,55 @@
 @import "bootstrap";
 @import "font-awesome";
 
+/*
+* MIXINS START
+*/
+
+@mixin centering {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
+/*
+* MIXINS END
+*/
+
+
 h1 {
 	font-size: 50px;
 	font-weight: bold;
+	color: white;
 }
 
 #homepgHeader {
 	width: 100%;
-	padding-top: 64px;
-	padding-bottom: 64px;
+	padding-top: 15%;
+	padding-bottom: 15%;
 	margin-top: 56px;
-	background-color: LightGrey;
+	background: image-url('headerbackground.GIF');
+  background-position: center;
 	text-align: center;
+}
+
+#languageBox {
+	@include centering
+}
+
+.box {
+	float: left;
+	width: 350px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 10px 5px 5px 0px;
+	background-color: pink;
+	text-align: center;
+}
+
+#aboutBox {
+	width: 100%;
+	background-color: LightGrey;
+	padding: 20px 80px 20px 80px;
 }
