@@ -13,6 +13,12 @@
   @content;
 }
 
+@mixin icons {
+	font-size: 45px;
+	margin-right: 50px;
+	@content;
+}
+
 /*
 * MIXINS END
 */
@@ -21,7 +27,7 @@
 h1 {
 	@include centering {
 		width: 800px;
-		background-color: pink;
+		background-color: rgba(219, 0, 0, 1);
 		font-size: 50px;
 		font-weight: bold;
 		color: white;
@@ -59,8 +65,12 @@ h1 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	margin: 10px 5px 0px 5px;
-	background-color: pink;
+	background-color: black;
 	text-align: center;
+	color: white;
+	border: 5px solid;
+	border-color: rgba(219, 0, 0, 1);
+	border-radius: 3px;
 }
 
 #missionStatement {
@@ -70,10 +80,34 @@ h1 {
 	margin-top: 10px;
 }
 
+#aboutMe {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	border: 5px solid black;
+	background-color: LightGrey;
+}
 
+.profile-img {
+	border-radius: 50%;
+}
 
+.fa-icons {
+	@include icons
+}
 
+.fa-icons a {
+	color: rgba(219, 0, 0, 1);
+}
 
+.mastfoot {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: LightGrey;
+	text-align: center;
+}
 
 
 
