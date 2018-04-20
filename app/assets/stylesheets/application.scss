@@ -62,8 +62,19 @@ h2 {
 }
 
 #languageBox {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background: image-url('markus-spiske-507983-unsplash.jpg');
+	background-position: center;
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	border-color: rgba(219, 0, 0, 1);
+}
+
+.forLangBox {
 	@include centering
 }
+
 
 .boxes {
 	float: left;
@@ -79,11 +90,22 @@ h2 {
 	border-radius: 3px;
 }
 
+.ruby {
+	color: rgba(219, 0, 0, 1);
+}
+
+.html {
+	color: rgba(255, 139, 31, 1);
+}
+
+.css {
+	color: rgba(67, 97, 234, 1);
+}
+
 #missionStatement {
 	width: 100%;
 	background-color: LightGrey;
 	padding: 20px 100px 20px 100px;
-	margin-top: 10px;
 }
 
 #aboutMe {
