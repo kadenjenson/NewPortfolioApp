@@ -34,14 +34,15 @@
 * Implement markdown into blog and portfolio
 * Style blog
 * Style portfolio
+* Picture uploading with AWS
 * Final styles and refactors
 * Push to heroku
 
 ## Done
 
-~~Landing page~~
-~~CRUD for blogs~~
-~~CRUD for portfolio~~
-~~Implement authentication~~
-~~Navbar~~
-~~Copyright footer~~
+* ~~Landing page~~
+* ~~CRUD for blogs~~
+* ~~CRUD for portfolio~~
+* ~~Implement authentication~~
+* ~~Navbar~~
+* ~~Copyright footer~~
