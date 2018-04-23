@@ -26,9 +26,8 @@
 
 h1 {
 	@include centering {
-		width: 800px;
+		width: 700px;
 		background-color: rgba(219, 0, 0, 1);
-		font-size: 50px;
 		font-weight: bold;
 		color: white;
 	}

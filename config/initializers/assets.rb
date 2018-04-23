@@ -18,3 +18,5 @@ Rails.application.config.assets.precompile += %w( portfolios.scss )
 Rails.application.config.assets.precompile += %w( pages.scss )
 Rails.application.config.assets.precompile += %w( application.scss )
 Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+Rails.application.config.assets.precompile += %w( fontawesome-all.css )

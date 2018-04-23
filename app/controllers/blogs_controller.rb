@@ -9,6 +9,7 @@ class BlogsController < ApplicationController
 
   def new
     @blog = Blog.new
+    @page_title = "New Blog Post"
   end
 
   def create
@@ -51,8 +52,8 @@ class BlogsController < ApplicationController
 
   def blog_params
     params.require(:blog).permit(:title, 
-                                  :body, 
-                                  technologies_attributes: [:id, :_destroy]
+                                 :body, 
+                                 technologies_attributes: [:id, :_destroy]
                                   )
   end
 

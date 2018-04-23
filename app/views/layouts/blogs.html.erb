@@ -12,7 +12,9 @@
 
   <body>
     <%= render 'shared/nav' %>
-    
-    <%= yield %>
+
+      <%= yield %>
+
+    <%= render "shared/app_footer", location: 'bottom' %>
   </body>
 </html>

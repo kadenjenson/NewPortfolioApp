@@ -1,8 +1,16 @@
-<h1>Blog posts</h1>
+<div class="blogHeader">
+	<h1>Blog</h1>
+</div>
 
-<%= link_to 'New Blog', new_blog_path %>
+<span><%= link_to 'New Blog', new_blog_path, class: 'btn btn-primary' %></span>
 
-<% @blogs.each do |blog| %>
-  <p><%= blog.title %></p>
-  <p><%= blog.body %></p>
-<% end %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<%= render partial: 'blog', collection: @blogs %>
+		</div>
+		<div class="col-md-4">
+			<%= render 'blog_sidebar' %>
+		</div>
+	</div>
+</div>
