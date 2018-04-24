@@ -1,5 +1,21 @@
 <div class="card">
+	
 	<h3><%= link_to blog.title, blog %></h3>
+		<span class="text-muted">Posted <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</span>
+	
 	<hr>
-	<p><%= blog.body %></p>
+		
+		<p><%= blog.body.truncate(200, separator: ' ') %></p>
+	
+	<hr>
+	
+	<div class="display-inline-block">
+		<span class="btn btn-warning", aria-label="Edit">
+			<%= link_to 'Edit', edit_blog_path(blog) %>
+		</span>
+		<span class="btn btn-danger">
+			<%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?'} %>
+		</span>
+	</div>
+
 </div>

@@ -1,4 +1,25 @@
-<%= @blog.title %>
-<%= @blog.body %>
+<%= render 'shared/blog_title_header' %>
 
-<%= link_to 'Back', blogs_path %>
+<div class="container">
+	<div class="card show-card">
+		
+		<div class="showHeader">
+			<span class="btn btn-info back", aria-label="Back">
+				<%= link_to '', blogs_path, class: 'fa fa-arrow-circle-left fa-lg' %>
+			</span>
+			<span class="btn btn-light edit", aria-label="Edit">
+				<%= link_to '', edit_blog_path(@blog), class: 'fa fa-edit fa-lg' %>
+			</span>
+			<span class="btn btn-danger delete", aria-label="Delete">
+				<%= link_to '', @blog, class: 'fa fa-trash-o fa-lg', method: :delete, data: { confirm: 'Are you sure?' } %>
+			</span>
+		</div>
+
+		<hr>
+
+		<p><%= @blog.body %></p>
+
+		<hr>
+
+	</div>
+</div>

@@ -11,6 +11,13 @@
   align-items: center;
   @content;
 }
+
+@mixin buttons {
+	margin-right: 10px;
+	a {
+		color: white;
+	}
+}
 /*
 * MIXINS END
 */
@@ -67,7 +74,39 @@ h1 {
 	margin-bottom: 30px;
 }
 
+p {
+ 	margin-bottom: 0px;
+}
+
+.btn {
+ 	@include buttons
+}
+
+.back a:hover {
+ 	text-decoration: none;
+}
+
+.edit a {
+ 	color: black;
+ 	&:hover {
+ 		color: orange;
+ 		text-decoration: none;
+ 	}
+}
+
+.delete a:hover {
+ 	text-decoration: none;
+}
+
+.showHeader {
+ 	display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+}
+
 .mastfoot {
+	position: absolute;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;

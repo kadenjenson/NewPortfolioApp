@@ -3,7 +3,7 @@
 ## Features
 1. One landing page
 
- A scrolling homepage that will have all info on it. About me, contact info, skills, link to resume, mission statement, etc.
+   A scrolling homepage that will have all info on it. About me, contact info, skills, link to resume, mission statement, etc.
 
 1. Blog page
 
@@ -21,7 +21,7 @@
 
 1. Dark backgrounds
 
- Can be dark images or solid colors, graphic designs, etc.
+ 	Can be dark images or solid colors, graphic designs, etc.
 
 1. Grey backgrounds for cards
 
