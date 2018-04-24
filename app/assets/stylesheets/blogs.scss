@@ -15,6 +15,11 @@
 * MIXINS END
 */
 
+html,
+body {
+	height: 100%;
+}
+
 #theNav {
 	background-color: rgba(135, 135, 135, 0.80);
 }
@@ -40,10 +45,26 @@
 h1 {
 	@include centering {
 		width: 700px;
+		padding-bottom: 5px;
 		background-color: rgba(219, 0, 0, 1);
 		font-weight: bold;
 		color: white;
 	}
+}
+
+.newBlog {
+	margin: auto;
+	text-align: center;
+}
+
+.btn-primary {
+	margin: 20px 0px 0px 0px;
+}
+
+.card {
+	padding: 20px 40px 20px 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .mastfoot {
