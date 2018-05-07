@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="card show-card">
 		
-		<div class="showHeader">
+		<div class="btn-bar">
 			<span class="btn btn-info back", aria-label="Back">
 				<%= link_to '', blogs_path, class: 'fa fa-arrow-circle-left fa-lg' %>
 			</span>
@@ -17,7 +17,7 @@
 
 		<hr>
 
-		<p><%= @blog.body %></p>
+		<p><%= markdown @blog.body %></p>
 
 		<hr>
 

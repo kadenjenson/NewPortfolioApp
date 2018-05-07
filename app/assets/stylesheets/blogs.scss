@@ -27,6 +27,20 @@ body {
 	height: 100%;
 }
 
+h1 {
+	@include centering {
+		width: 700px;
+		padding-bottom: 5px;
+		background-color: rgba(219, 0, 0, 1);
+		font-weight: bold;
+		color: white;
+	}
+}
+
+p {
+ 	margin-bottom: 0px;
+}
+
 #theNav {
 	background-color: rgba(135, 135, 135, 0.80);
 }
@@ -49,16 +63,6 @@ body {
 	}
 }
 
-h1 {
-	@include centering {
-		width: 700px;
-		padding-bottom: 5px;
-		background-color: rgba(219, 0, 0, 1);
-		font-weight: bold;
-		color: white;
-	}
-}
-
 .newBlog {
 	margin: auto;
 	text-align: center;
@@ -72,10 +76,6 @@ h1 {
 	padding: 20px 40px 20px 40px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-}
-
-p {
- 	margin-bottom: 0px;
 }
 
 .btn {
@@ -98,11 +98,15 @@ p {
  	text-decoration: none;
 }
 
-.showHeader {
+.btn-bar {
  	display: flex;
   flex-wrap: wrap;
   justify-content: left;
   align-items: left;
+}
+
+.blogForm {
+	margin-top: 30px;
 }
 
 .mastfoot {
