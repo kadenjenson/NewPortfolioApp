@@ -5,11 +5,11 @@
 	
 	<hr>
 		
-		<p><%= blog.body.truncate(200, separator: ' ') %></p>
+		<p><%= markdown blog.body.truncate(200, separator: ' ') %></p>
 	
 	<hr>
 	
-	<div class="display-inline-block">
+	<div class="btn-bar">
 		<span class="btn btn-light edit", aria-label="Edit">
 			<%= link_to '', edit_blog_path(blog), class: 'fa fa-edit fa-lg' %>
 		</span>

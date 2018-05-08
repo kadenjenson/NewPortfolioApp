@@ -18,6 +18,12 @@
 		color: white;
 	}
 }
+
+@mixin iconlinks {
+	font-size: 40px;
+	margin-right: 20px;
+	@content;
+}
 /*
 * MIXINS END
 */
@@ -39,6 +45,7 @@ h1 {
 
 p {
  	margin-bottom: 0px;
+ 	font-size: 15px;
 }
 
 #theNav {
@@ -63,23 +70,35 @@ p {
 	}
 }
 
-.newBlog {
-	margin: auto;
-	text-align: center;
-}
-
-.btn-primary {
-	margin: 20px 0px 0px 0px;
-}
-
 .card {
 	padding: 20px 40px 20px 40px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
+.text-muted {
+	font-size: 13px;
+}
+
+/*
+*  BUTTON STYLES START
+*/
+
 .btn {
  	@include buttons
+}
+
+.newBlog {
+	text-align: center;
+	margin-right: 0px;
+}
+
+.sidebar-links {
+	@include iconlinks
+}
+
+.sidebar-links a {
+	color: rgba(219, 0, 0, 1);
 }
 
 .back a:hover {
@@ -104,6 +123,10 @@ p {
   justify-content: left;
   align-items: left;
 }
+
+/*
+*  BUTTON STYLES END
+*/
 
 .blogForm {
 	margin-top: 30px;
