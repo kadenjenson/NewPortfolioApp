@@ -1,2 +1,31 @@
 @import "bootstrap";
 @import "font-awesome";
+
+/*
+* MIXINS START
+*/
+
+/*
+* MIXINS END
+*/
+
+#theNav {
+	background-color: rgba(135, 135, 135, 0.80);
+}
+
+#theNav a {
+	color: white;
+	&:hover {
+		color: LightGreen;
+	}
+}
+
+.mastfoot {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: LightGrey;
+	text-align: center;
+}
