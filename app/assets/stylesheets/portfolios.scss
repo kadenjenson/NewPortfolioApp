@@ -52,28 +52,18 @@ h1 {
 	}
 }
 
-.mastfoot {
-	position: absolute;
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: LightGrey;
-	text-align: center;
+.portfolio-index {
+	margin-right: 2%;
+	margin-left: 2%;
 }
 
-
-
-
-.parent-el {
-	@include centering {
-		max-width: 1400px;
-	}
+.portfolio-item {
+	margin: 15px 0px 15px 0px;
 }
 
 .box {
 	float: left;
 	width: 100%;
-	margin: 20px 5px 0px 5px;
 	background: #EEE;
 	height: 250px;
 	position: relative;
@@ -179,6 +169,22 @@ h1 {
 		width: 100%;
 	}
 }
+
+.mastfoot {
+	position: absolute;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: LightGrey;
+	text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
