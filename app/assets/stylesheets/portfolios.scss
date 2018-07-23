@@ -15,6 +15,12 @@
 * MIXINS END
 */
 
+*,
+*:before,
+*:after {
+	margin: 0;
+}
+
 html,
 body {
 	height: 100%;
@@ -68,7 +74,6 @@ h1 {
 	height: 250px;
 	position: relative;
 	overflow: hidden;
-	margin: 0em 1em;
 
 	&:hover {
 		span {
