@@ -1,56 +1,50 @@
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
+
 <div id="homepgHeader">
-	<h1><i class="fab fa-accusoft fa-lg"></i>KJ Development</h1>
+	<h1>J. Kaden Jenson</h1>
 </div>
 
 <div id="languageBox">
-	<div class="container forLangBox">
-		<div class="boxes">
-			<h2><i class="fa fa-diamond ruby"></i> RUBY</h2>
-		</div>
+	<div class="boxes">
+		<p><i class="fa fa-diamond ruby"></i> RUBY</p>
+	</div>
 
-		<div class="boxes">
-			<h2>
-				<%= image_tag "Ruby_on_Rails.png", width: 40, height: 48, alt: "Rails5" %>
-				RAILS 5
-			</h2>
-		</div>
+	<div class="boxes">
+		<p><%= image_tag "Ruby_on_Rails.png", width: 55, height: 50, alt: "Rails5" %> RAILS 5</p>
+	</div>
 
-		<div class="boxes">
-			<h2>
-				<%= image_tag "angular.png", width: 40, height: 48, alt: "Angular" %> ANGULAR
-			</h2>
-		</div>
+	<div class="boxes">
+		<p><%= image_tag "python.png", width: 55, height: 50, alt: "Python" %> PYTHON</p>
+	</div>
 
-		<div class="boxes">
-			<h2>
-				<%= image_tag "typescript.png", width: 40, height: 42, alt: "TS" %> TYPESCRIPT
-			</h2>
-		</div>
+	<div class="boxes">
+		<p><%= image_tag "javascript.png", width: 55, height: 50, alt: "JS" %> JAVASCRIPT</p>
+	</div>
 
-		<div class="boxes">
-			<h2><%= image_tag "javascript.png", width: 40, height: 42, alt: "JS" %> JAVASCRIPT</h2>
-		</div>
+	<div class="boxes">
+		<p><%= image_tag "react.png", width: 55, height: 50, alt: "React" %> REACT</p>
+	</div>
 
-		<div class="boxes">
-			<h2><i class="fa fa-html5 html"></i> HTML5</h2>
-		</div>
+	<div class="boxes">
+		<p><%= image_tag "angular.svg", width: 55, height: 50, alt: "Angular" %> ANGULAR</p>
+	</div>
 
-		<div class="boxes">
-			<h2><i class="fa fa-css3 css"></i> CSS3</h2>
-		</div>
+	<div class="boxes">
+		<p><i class="fa fa-html5 html"></i> HTML5</p>
+	</div>
 
-		<div class="boxes">
-				<h2><%= image_tag "scss.png", width: 75, height: 42, alt: "SCSS" %>SCSS</h2>
-		</div>
+	<div class="boxes">
+		<p><i class="fa fa-css3 css"></i> CSS3</p>
+	</div>
+
+	<div class="boxes">
+		<p><%= image_tag "scss.png", width: 55, height: 42, alt: "SCSS" %>SCSS</p>
 	</div>
 </div>
 
-
-<div id="missionStatement">
-	<p>That, out there. That's my grave. On one of our adventures Rick and I basically destroyed the whole world. So we bailed on that reality and we came to this one. Because in this one the world wasn't destroyed. And in this one, we were dead. So we came here a-a-and we buried ourselves and we took their place. And every morning, Summer, I eat breakfast 2 God? God's turning people into insect monsters Beth. I'm the one beating them to death. Thank me. Meeseeks don't usually have to exist for this long. It's gettin' weeeiiird. Hi! Principal Vagina: the name's real, possibly Scandinavian.Well let me check my list of powers and weaknesses: ability to do anything, but only whenever I want. Yeah, that sounds like a job for me. Go home and drink, grandpa. Isn't it obvious Morty? I froze him. Your blood will be my lotion!</p>
-</div>
-
-<div class="container">
+<!-- <div class="container">
 	<div class="jumbotron" id="aboutMe">
 		<h1>Your friendly neighborhood Software Developer</h1>
 
@@ -81,7 +75,16 @@
 		</div>
 
 	</div>
-</div>
+</div> -->
+
+<script type="text/javascript">
+	$('.autoplay').slick({
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	});
+</script>
 
 
 

@@ -1,0 +1,15 @@
+$kj-red: rgba(219, 0, 0, 1);
+
+@mixin centering {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+
+@mixin iconlinks {
+	font-size: 45px;
+	margin-right: 50px;
+	@content;
+}

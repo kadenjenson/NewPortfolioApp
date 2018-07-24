@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+	margin: 0px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+h1 {
+	@include centering {
+		width: 700px;
+		background-color: $kj-red;
+		font-weight: bold;
+		color: white;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	max-height: 48px;
+}

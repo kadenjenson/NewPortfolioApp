@@ -1,48 +1,9 @@
 @import "bootstrap";
 @import "font-awesome";
+@import 'slick-theme';
 
-/*
-* MIXINS START
-*/
-
-@mixin centering {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  @content;
-}
-
-@mixin iconlinks {
-	font-size: 45px;
-	margin-right: 50px;
-	@content;
-}
-
-/*
-* MIXINS END
-*/
-
-html,
-body {
-	height: 100%;
-}
-
-
-h1 {
-	@include centering {
-		width: 700px;
-		background-color: rgba(219, 0, 0, 1);
-		font-weight: bold;
-		color: white;
-	}
-}
-
-h2 {
-	font-size: 40px;
-	font-weight: bold;
-	max-height: 48px;
-}
+@import 'mixins';
+@import 'global';
 
 #theNav {
 	background-color: rgba(135, 135, 135, 0.80);
@@ -60,38 +21,36 @@ h2 {
 		width: 100%;
 		padding-top: 10%;
 		padding-bottom: 10%;
-		background: image-url('headerbackground.GIF');
+		background: image-url('markus-spiske-507983-unsplash.jpg');
 	  background-position: center;
+	  border-bottom: 4px solid $kj-red;
 	}
 }
 
 #languageBox {
 	padding-top: 20px;
-	padding-bottom: 30px;
-	background: image-url('markus-spiske-507983-unsplash.jpg');
-	background-position: center;
-	border-top: 4px solid;
-	border-bottom: 4px solid;
-	border-color: rgba(219, 0, 0, 1);
-}
-
-.forLangBox {
-	@include centering
+	padding-bottom: 20px;
+	overflow: auto;
 }
 
 .boxes {
 	float: left;
-	width: 350px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin: 10px 5px 0px 5px;
-	background-color: rgba(135, 135, 135, 0.62);
+	position: relative;
+	width: 180px;
+	height: 85px;
 	text-align: center;
-	color: white;
+}
+
+.boxes p {
+	margin: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .ruby {
-	color: rgba(219, 0, 0, 1);
+	color: $kj-red;
 }
 
 .html {
@@ -100,12 +59,6 @@ h2 {
 
 .css {
 	color: rgba(67, 97, 234, 1);
-}
-
-#missionStatement {
-	width: 100%;
-	background-color: LightGrey;
-	padding: 20px 100px 20px 100px;
 }
 
 #aboutMe {
@@ -130,8 +83,9 @@ h2 {
 }
 
 .mastfoot {
-	position: relative;
-	bottom: 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
