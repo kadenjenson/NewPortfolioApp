@@ -6,45 +6,53 @@
 	<h1>J. Kaden Jenson</h1>
 </div>
 
-<div id="languageBox">
+<div class="languageBox">
 	<div class="boxes">
-		<p><i class="fa fa-diamond ruby"></i> RUBY</p>
+		<span><i class="fa fa-diamond ruby"></i></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "Ruby_on_Rails.png", width: 55, height: 50, alt: "Rails5" %> RAILS 5</p>
+		<span><%= image_tag "Ruby_on_Rails.png", width: 55, height: 50, alt: "Rails5" %></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "python.png", width: 55, height: 50, alt: "Python" %> PYTHON</p>
+		<span><%= image_tag "python.png", width: 55, height: 55, alt: "Python" %></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "javascript.png", width: 55, height: 50, alt: "JS" %> JAVASCRIPT</p>
+		<span><%= image_tag "javascript.png", width: 60, height: 50, alt: "JS" %></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "react.png", width: 55, height: 50, alt: "React" %> REACT</p>
+		<span><%= image_tag "react.png", width: 55, height: 55, alt: "React" %></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "angular.svg", width: 55, height: 50, alt: "Angular" %> ANGULAR</p>
+		<span><%= image_tag "angular.svg", width: 55, height: 50, alt: "Angular" %></span>
 	</div>
 
 	<div class="boxes">
-		<p><i class="fa fa-html5 html"></i> HTML5</p>
+		<span><i class="fa fa-html5 html"></i></span>
 	</div>
 
 	<div class="boxes">
-		<p><i class="fa fa-css3 css"></i> CSS3</p>
+		<span><i class="fa fa-css3 css"></i></span>
 	</div>
 
 	<div class="boxes">
-		<p><%= image_tag "scss.png", width: 55, height: 42, alt: "SCSS" %>SCSS</p>
+		<span><%= image_tag "scss.png", width: 80, height: 46, alt: "SCSS" %></span>
+	</div>
+
+	<div class="boxes">
+		<span><%= image_tag "bootstrap-stack.png", width: 75, height: 60, alt: "Bootstrap" %></span>
+	</div>
+
+	<div class="boxes">
+		<span><%= image_tag "github.png", width: 66, height: 55, alt: "GitHub" %></span>
 	</div>
 </div>
 
-<!-- <div class="container">
+<div class="container">
 	<div class="jumbotron" id="aboutMe">
 		<h1>Your friendly neighborhood Software Developer</h1>
 
@@ -75,14 +83,17 @@
 		</div>
 
 	</div>
-</div> -->
+</div>
 
 <script type="text/javascript">
-	$('.autoplay').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  autoplaySpeed: 2000,
+	$(document).ready(function(){
+		$('.languageBox').slick({
+		  slidesToShow: 7,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 3500,
+		  arrows: false,
+		});
 	});
 </script>
 

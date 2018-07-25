@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
-@import 'slick-theme';
+@import "slick";
+@import "slick-theme";
 
 @import 'mixins';
 @import 'global';
@@ -27,7 +28,8 @@
 	}
 }
 
-#languageBox {
+.languageBox {
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	overflow: auto;
@@ -39,9 +41,10 @@
 	width: 180px;
 	height: 85px;
 	text-align: center;
+	font-size: 50px;
 }
 
-.boxes p {
+.boxes span {
 	margin: 0px;
 	position: absolute;
 	top: 50%;
