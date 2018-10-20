@@ -7,12 +7,11 @@
 html,
 body {
 	height: 100%;
+	position: relative;
 }
 
 h1 {
 	@include centering {
-		width: 700px;
-		background-color: $kj-red;
 		font-weight: bold;
 		color: white;
 	}
