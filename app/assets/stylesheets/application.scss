@@ -72,7 +72,7 @@
 }
 
 .aboutMe-header {
-	width: 780px;
+	max-width: 640px !important;
 	padding: 8px 0px;
 	padding-left: 20px;
 	background-color: $kj-red;
@@ -83,7 +83,6 @@
 }
 
 .profile-img {
-	border-radius: 50%;
 }
 
 .aboutMe-icons {
@@ -91,7 +90,21 @@
 }
 
 .aboutMe-icons a {
-	color: $kj-red;
+	color: black;
+	& :hover {
+		color: $kj-red;
+	}
+}
+
+#portfolio-preview {
+	width: 100%;
+	padding: 30px 0px;
+	margin-top: 30px;
+
+	.pr-header {
+		width: 380px;
+		background-color: $kj-red;
+	}
 }
 
 .mastfoot {
